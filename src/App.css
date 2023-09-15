@@ -1,38 +1,100 @@
-.App {
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Work+Sans:wght@400;500&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Layout */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Colors */
+
+:root {
+  --primary: #3F51B5;
+  --secondary: #3a72b7;
+}
+
+/* Header */
+
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navigation */
+
+nav {
+  background-color: var(--secondary);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav button {
+  appearance: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+nav button.active {
+  border-bottom: 2px solid #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav button:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+/* Content */
+
+.content {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Table */ 
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+/* Misc */
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
 }
