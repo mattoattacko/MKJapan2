@@ -83,6 +83,7 @@ table {
   margin-top: 1rem;
   border-collapse: collapse;
   font-size: 0.9rem;
+  border: 1px solid #ccc;
 }
 
 /* Misc */
